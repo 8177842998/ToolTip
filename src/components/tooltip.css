@@ -1,0 +1,54 @@
+.body {
+  justify-content: center;
+}
+
+.tooltip-container {
+  position: relative;
+  background-color: wheat;
+  margin-top: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.tooltip {
+  position:absolute;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  margin-left: 30%;
+  margin-top: 2%;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 1;
+  pointer-events: none; 
+}
+
+/* Styling for different tooltip positions */
+
+.tooltip.left {
+  left: -75%; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.right {
+  right: -45%; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip.top {
+  left: 20%;
+  bottom: 120%; 
+  transform: translateX(-50%);
+}
+
+.tooltip.bottom {
+  left: 20%;
+  top: 120%; 
+  transform: translateX(-50%);
+}
